@@ -1,5 +1,6 @@
 package io.github.mrjerjer2222_ui;
 
+import io.github.mrjerjer2222_ui.item.WandItem;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.core.Registry;
@@ -24,7 +25,7 @@ public class TestMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-		Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "wand"), new Item(new Item.Properties()));
+		Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "wand"), new WandItem(new Item.Properties()));
 
 	}
 }
